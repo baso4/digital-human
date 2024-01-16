@@ -1,8 +1,13 @@
 package main
 
-import "github.com/baso4/digital-human/models"
+import (
+	"github.com/baso4/digital-human/app/cmd"
+	"github.com/baso4/digital-human/models"
+)
 
 func main() {
+
+	cmd.Execute()
 	// Create two characters
 	person1 := models.NewPerson("Alice", 25)
 	person2 := models.NewPerson("Bob", 28)
